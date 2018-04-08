@@ -1,0 +1,16 @@
+//include ../-helpers/variables
+//include ../-helpers/mixins
+
+doctype html
+html(lang="ru")
+	//include -templates-includes/head--inc
+	//-ID шаблона. Добавляется как класс тегу body. Нужно для указания активной ссылки меню
+	body.tpl-id-1
+
+		//-Шапка
+		//include -templates-includes/header--inc
+
+		block content
+
+		//-Подвал
+		//include -templates-includes/footer--inc

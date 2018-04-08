@@ -1,0 +1,61 @@
+@import '../mixins/custom.styl'
+$modal-header__bg = #ddd
+
+// ===================================================================================================================
+// Common modal styles
+// ===================================================================================================================
+
+.modal-container
+	display none
+	position fixed
+	top 0
+	left 0
+	height 100%
+	width 100%
+	z-index 9990
+	overflow auto
+	background alpha(#424242, 0.95)
+	text-align center
+	white-space nowrap
+	overflow-x hidden
+	&:before
+		display inline-block
+		vertical-align middle
+		height 100%
+		// Adaptive
+		+media(md)
+			content ''
+	
+.modal
+	position relative
+	display inline-block
+	vertical-align middle
+	z-index 9998
+	text-align left
+	white-space normal
+	background #fff
+	color $body-color
+	box-shadow 0 0 20px rgba(0, 0, 0, 0.6)
+	// Adaptive
+	+media(sm)
+		margin 15px
+	
+	&__heading
+		position relative
+		background $modal-header__bg
+		//	font-size 1.2rem
+		@extend h3
+		margin: 0
+		padding 15px
+	
+	&__close-btn
+		position absolute
+		top 0
+		right 0
+		width 50px
+		height 100%
+		//background
+		background-size 18px
+		border 0
+		cursor pointer
+		z-index 9999

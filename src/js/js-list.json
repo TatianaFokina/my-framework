@@ -1,0 +1,4 @@
+[
+  "./src/js/scripts.js",
+  "./src/js/libs/custom.collapse.js"
+]
