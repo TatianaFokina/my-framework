@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "del": "^3.0.0",
+    "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cache": "^0.4.6",
@@ -33,6 +34,7 @@
     "imagemin-optipng": "^5.2.1",
     "imagemin-pngquant": "^5.0.1",
     "imagemin-svgo": "^5.2.2",
+    "minimatch": "^3.0.4",
     "postcss-data-uri": "^1.0.3",
     "postcss-inline-svg": "^3.0.0",
     "postcss-svgo": "^2.1.6"
